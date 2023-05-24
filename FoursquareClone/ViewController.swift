@@ -22,6 +22,7 @@ class ViewController: UIViewController {
                 print(error?.localizedDescription)
             }else{
                 print("uploaded")
+                
             }
             
         }

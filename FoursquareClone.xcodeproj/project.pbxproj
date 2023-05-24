@@ -13,9 +13,14 @@
 		549642AF2A1DF18D00C3D212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549642AD2A1DF18D00C3D212 /* Main.storyboard */; };
 		549642B12A1DF18D00C3D212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 549642B02A1DF18D00C3D212 /* Assets.xcassets */; };
 		549642B42A1DF18D00C3D212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549642B22A1DF18D00C3D212 /* LaunchScreen.storyboard */; };
+		54BA5B292A1E1D2900BF836F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA5B282A1E1D2900BF836F /* Bolts.framework */; };
+		54BA5B2B2A1E1D3700BF836F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA5B2A2A1E1D3700BF836F /* Parse.framework */; };
+		6BB17E811C9E4E488CADE213 /* Pods_FoursquareClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08657EE1679AA4E92B794B72 /* Pods_FoursquareClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08657EE1679AA4E92B794B72 /* Pods_FoursquareClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D37C00C652A3DF34953D15A /* Pods-FoursquareClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClone.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone.debug.xcconfig"; sourceTree = "<group>"; };
 		549642A42A1DF18D00C3D212 /* FoursquareClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		549642A72A1DF18D00C3D212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		549642A92A1DF18D00C3D212 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,10 @@
 		549642B02A1DF18D00C3D212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		549642B32A1DF18D00C3D212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		549642B52A1DF18D00C3D212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BA5B262A1E1D2300BF836F /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BA5B282A1E1D2900BF836F /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BA5B2A2A1E1D3700BF836F /* Parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CCC806CAAD782DD8A91C17 /* Pods-FoursquareClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClone.release.xcconfig"; path = "Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BA5B2B2A1E1D3700BF836F /* Parse.framework in Frameworks */,
+				54BA5B292A1E1D2900BF836F /* Bolts.framework in Frameworks */,
+				6BB17E811C9E4E488CADE213 /* Pods_FoursquareClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,8 @@
 			children = (
 				549642A62A1DF18D00C3D212 /* FoursquareClone */,
 				549642A52A1DF18D00C3D212 /* Products */,
+				A39EDB9531EDC7ADCF51863A /* Pods */,
+				CEE23DE2F6CAE63165379E46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +81,26 @@
 			path = FoursquareClone;
 			sourceTree = "<group>";
 		};
+		A39EDB9531EDC7ADCF51863A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D37C00C652A3DF34953D15A /* Pods-FoursquareClone.debug.xcconfig */,
+				C5CCC806CAAD782DD8A91C17 /* Pods-FoursquareClone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CEE23DE2F6CAE63165379E46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54BA5B2A2A1E1D3700BF836F /* Parse.framework */,
+				54BA5B282A1E1D2900BF836F /* Bolts.framework */,
+				54BA5B262A1E1D2300BF836F /* Bolts.framework */,
+				08657EE1679AA4E92B794B72 /* Pods_FoursquareClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 549642B82A1DF18D00C3D212 /* Build configuration list for PBXNativeTarget "FoursquareClone" */;
 			buildPhases = (
+				323E4332F3EBDBEDDE2B7777 /* [CP] Check Pods Manifest.lock */,
 				549642A02A1DF18D00C3D212 /* Sources */,
 				549642A12A1DF18D00C3D212 /* Frameworks */,
 				549642A22A1DF18D00C3D212 /* Resources */,
+				8C354E4CD321A71031FA1CF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +168,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		323E4332F3EBDBEDDE2B7777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoursquareClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C354E4CD321A71031FA1CF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		549642A02A1DF18D00C3D212 /* Sources */ = {
@@ -282,6 +360,7 @@
 		};
 		549642B92A1DF18D00C3D212 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D37C00C652A3DF34953D15A /* Pods-FoursquareClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +389,7 @@
 		};
 		549642BA2A1DF18D00C3D212 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5CCC806CAAD782DD8A91C17 /* Pods-FoursquareClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

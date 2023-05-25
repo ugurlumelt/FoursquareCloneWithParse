@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
+class SignUpVC: UIViewController {
     
     
     @IBOutlet weak var userNameText: UITextField!
@@ -40,10 +40,33 @@ class ViewController: UIViewController {
         }*/
         
         
+     
+        
     }
     
     
     @IBAction func signInClicked(_ sender: Any) {
+        
+        if userNameText.text != "" && passwordText.text != "" {
+            
+            PFUser.logInWithUsername(inBackground: userNameText.text!, password: passwordText.text!) {(user, error) in
+                if error != nil{
+                    self.makeAlert(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Error")
+                }else {
+                    // segue
+                    self.performSegue(withIdentifier: "toPlacesVC", sender: nil)
+                    
+                }
+                
+            }
+            
+        }else{
+            
+            makeAlert(titleInput: "Error !", messageInput: "Username/Password ?")
+        }
+        
+        
+        
     }
     
     @IBAction func signUpClicked(_ sender: Any) {
@@ -59,15 +82,9 @@ class ViewController: UIViewController {
                     self.makeAlert(titleInput: "Error !", messageInput: error?.localizedDescription ?? "Error !!")
                     
                 }else{
-                    //when user sing up , to go which page so perform segue
-                    print("OKKKK")
-                    
-                }
-                
+                    self.performSegue(withIdentifier: "toPlacesVC", sender: nil)
+                    }
             }
-        
-            
-        
         }else{
             makeAlert(titleInput: "Error !", messageInput: "Username/Password ?")
         }
